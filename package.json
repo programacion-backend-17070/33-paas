@@ -4,12 +4,15 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "post": "curl -d '@producto.json' -H 'Content-Type: application/json' -X POST http://coder17070-env.eba-i82ysnmm.us-east-1.elasticbeanstalk.com/api/products",
+    "post:local": "curl -d '@producto.json' -H 'Content-Type: application/json' -X POST http://localhost:8888/api/products"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1125.0",
     "express": "^4.18.1"
   }
 }
