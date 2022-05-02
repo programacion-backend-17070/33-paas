@@ -11,4 +11,13 @@ app.get("/info", (req, res) => {
     })
 })
 
+app.get("/suma", (req, res) => {
+    const {num1, num2} = req.query
+
+    res.send({
+        result: Number(num1) + Number(num2)
+    })
+
+})
+
 app.listen(PORT, () => console.log(`server at http://localhost:${PORT}`))
