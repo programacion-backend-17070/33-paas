@@ -1,0 +1,10 @@
+
+// User Story 1
+// /info
+// {num: CPUs}
+
+// User Story 2
+// ok Server 1
+
+// User Story 3
+// /suma?num1&num2
