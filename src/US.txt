@@ -1,0 +1,7 @@
+
+// User Story 1
+// /info
+// {num: CPUs}
+
+// User Story 2
+// ok Server 1
