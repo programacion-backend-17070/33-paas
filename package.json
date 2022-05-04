@@ -4,12 +4,15 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "create-product": "curl -d '@products.json' -H 'Content-Type: application/json' -X POST http://coder17070-env-1.eba-4r3zxdxm.us-east-1.elasticbeanstalk.com/api/products",
+    "update-product": "curl -d '@products.json' -H 'Content-Type: application/json' -X PUT http://coder17070-env-1.eba-4r3zxdxm.us-east-1.elasticbeanstalk.com/api/products/4"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1127.0",
     "express": "^4.18.1"
   }
 }
